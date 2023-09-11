@@ -10,8 +10,11 @@ class SingleBook extends Component {
     let cardClass;
     return (
       <>
-        {(cardClass = this.props.book.id === this.props.id ? "border-2 border-danger " : "")}
-        <Card className={cardClass}>
+        {/* {(cardClass = this.props.book.asin === this.props.id ? "border-2 border-danger " : "")} */}
+        <Card
+          // className={cardClass}
+          style={{ border: this.props.book.asin === this.props.id ? "3px solid red " : "none" }}
+        >
           <Card.Img
             className="card-img-fluid"
             style={{ height: " 200px", objectFit: "contain" }}
