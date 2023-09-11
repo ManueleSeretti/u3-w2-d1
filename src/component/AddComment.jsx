@@ -28,6 +28,7 @@ class AddComment extends Component {
     } catch (error) {
       console.log(error);
     }
+    this.props.fetchComment();
   };
 
   render() {

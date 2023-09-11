@@ -17,6 +17,7 @@ class CommentList extends Component {
     } catch (error) {
       console.log(error);
     }
+    this.props.fetchComment();
   };
   render() {
     console.log(this.props.list);
